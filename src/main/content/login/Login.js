@@ -93,7 +93,7 @@ class Login extends Component {
 
                             {tabValue === 0 && <JWTLoginTab/>}
                             {tabValue === 1 && <FirebaseLoginTab/>}
-                            {tabValue === 0 && <Auth0LoginTab/>}
+                            {tabValue === 2 && <Auth0LoginTab/>}
 
                             <div className="flex flex-col items-center justify-center pt-32">
                                 <span className="font-medium">Don't have an account?</span>
