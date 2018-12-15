@@ -3,8 +3,9 @@ import {authRoles} from 'auth';
 
 export const AnalyticsDashboardAppConfig = {
     settings: {
-        layout: {
-            config: {}
+        layout: {            
+            config: {},
+            style: 'layout1'
         }        
     },    
     routes  : [

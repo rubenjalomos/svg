@@ -58,7 +58,7 @@ const styles = theme => ({
 
 class SettingsPanel extends Component {
     state = {
-        open: false
+        open: false        
     };
 
     handleOpen = () => {

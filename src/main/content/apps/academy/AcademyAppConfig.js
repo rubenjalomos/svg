@@ -4,7 +4,9 @@ import {FuseLoadable} from '@fuse';
 
 export const AcademyAppConfig = {
     settings: {
-        layout: {}
+        layout: {
+            style:'layout1'
+        }
     },
     routes  : [
         {

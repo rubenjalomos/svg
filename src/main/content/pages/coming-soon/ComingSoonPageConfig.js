@@ -3,7 +3,8 @@ import {FuseLoadable} from '@fuse';
 export const ComingSoonPageConfig = {
     settings: {
         layout: {
-            config: {}
+            config: {},
+            style: 'layout2'
         }
     },
     routes  : [

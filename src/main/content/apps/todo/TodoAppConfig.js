@@ -4,7 +4,9 @@ import {FuseLoadable} from '@fuse';
 
 export const TodoAppConfig = {
     settings: {
-        layout: {}
+        layout: {
+            style:'layout1'
+        }
     },
     routes  : [
         {

@@ -3,7 +3,8 @@ import {FuseLoadable} from '@fuse';
 export const FaqPageConfig = {
     settings: {
         layout: {
-            config: {}
+            config: {},
+            style:'layout1'
         }
     },
     routes  : [

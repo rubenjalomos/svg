@@ -1,6 +1,6 @@
 const fuseSettingsConfig = {
     layout          : {       
-        style : 'layout2',
+        style : 'layout1',
         config: {
             scroll : 'content',
             navbar : {
@@ -12,7 +12,7 @@ const fuseSettingsConfig = {
                 position: 'below'
             },
             footer : {
-                display : true,
+                display : false,
                 style   : 'fixed'                
             },           
             mode   : 'fullwidth'

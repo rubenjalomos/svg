@@ -5,7 +5,8 @@ import {FuseLoadable} from '@fuse';
 export const ContactsAppConfig = {
     settings: {
         layout: {
-            config: {}
+            config: {},
+            style: 'layout1'
         }
     },
     routes  : [

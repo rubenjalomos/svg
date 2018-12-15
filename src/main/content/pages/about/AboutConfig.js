@@ -4,6 +4,7 @@ import {authRoles} from 'auth';
 export const AboutConfig = {
     settings: {
         layout: {
+            style:'layout2',
             config: {
                 navbar        : {
                     display: true

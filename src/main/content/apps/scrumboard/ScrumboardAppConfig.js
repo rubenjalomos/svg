@@ -4,7 +4,10 @@ import {FuseLoadable} from '@fuse';
 
 export const ScrumboardAppConfig = {
     settings: {
-        layout: {}
+        layout: {
+            style:'layout1'
+        },
+        
     },
     routes  : [
         {

@@ -3,7 +3,8 @@ import {FuseLoadable} from '@fuse';
 export const FileManagerAppConfig = {
     settings: {
         layout: {
-            config: {}
+            config: {},
+            style: 'layout1'
         }
     },
     routes  : [

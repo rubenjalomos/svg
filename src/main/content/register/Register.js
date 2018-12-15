@@ -7,9 +7,8 @@ import {withStyles} from '@material-ui/core/styles/index';
 import {Card, CardContent, Tab, Tabs, Typography} from '@material-ui/core';
 import classNames from 'classnames';
 import {FuseAnimate} from '@fuse';
-import FirebaseRegisterTab from './tabs/FirebaseRegisterTab';
 import Auth0RegisterTab from './tabs/Auth0RegisterTab';
-import JWTRegisterTab from './tabs/JWTRegisterTab';
+
 
 const styles = theme => ({
     root : {
@@ -45,7 +44,7 @@ class Register extends Component {
     };
 
     onSubmit = (model) => {
-        this.props.registerWithFirebase(model);
+        //this.props.registerWithFirebase(model);
     };
 
     componentDidUpdate(prevProps, prevState)
@@ -93,8 +92,7 @@ class Register extends Component {
 
                     <FuseAnimate delay={400}>
                         <Typography variant="subtitle1" color="inherit" className="max-w-512 mt-16">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper nisl erat, vel convallis elit fermentum pellentesque. Sed mollis velit
-                            facilisis facilisis.
+                            
                         </Typography>
                     </FuseAnimate>
                 </div>
@@ -111,17 +109,7 @@ class Register extends Component {
                                 onChange={this.handleTabChange}
                                 fullWidth={true}
                                 className="mb-32"
-                            >
-                                <Tab
-                                    icon={<img className="h-40 p-4 bg-black rounded-12" src="assets/images/logos/jwt.svg" alt="firebase"/>}
-                                    className="min-w-0"
-                                    label="JWT"
-                                />
-                                <Tab
-                                    icon={<img className="h-40" src="assets/images/logos/firebase.svg" alt="firebase"/>}
-                                    className="min-w-0"
-                                    label="Firebase"
-                                />
+                            >                                
                                 <Tab
                                     icon={<img className="h-40" src="assets/images/logos/auth0.svg" alt="auth0"/>}
                                     className="min-w-0"
@@ -129,15 +117,14 @@ class Register extends Component {
                                 />
                             </Tabs>
 
-                            {tabValue === 0 && <JWTRegisterTab/>}
-                            {tabValue === 1 && <FirebaseRegisterTab/>}
-                            {tabValue === 2 && <Auth0RegisterTab/>}
+                           
+                            {tabValue === 0 && <Auth0RegisterTab/>}
 
-                            <div className="flex flex-col items-center justify-center pt-32 pb-24">
+                            {/* <div className="flex flex-col items-center justify-center pt-32 pb-24">
                                 <span className="font-medium">Already have an account?</span>
                                 <Link className="font-medium" to="/login">Login</Link>
                                 <Link className="font-medium mt-8" to="/">Back to Dashboard</Link>
-                            </div>
+                            </div> */}
 
                             <div className="flex flex-col items-center">
                             </div>
@@ -152,7 +139,7 @@ class Register extends Component {
 function mapDispatchToProps(dispatch)
 {
     return bindActionCreators({
-        registerWithFirebase: Actions.registerWithFirebase
+       // registerWithFirebase: Actions.registerWithFirebase
     }, dispatch);
 }
 

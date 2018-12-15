@@ -4,6 +4,7 @@ import {authRoles} from 'auth';
 export const HomeConfig = {
     settings: {
         layout: {
+            style: 'layout2',
             config: {
                 navbar        : {
                     display: true

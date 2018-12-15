@@ -4,7 +4,8 @@ import {FuseLoadable} from '@fuse';
 
 export const ECommerceAppConfig = {
     settings: {
-        layout: {}
+        layout: {},
+        style: 'layout1'
     },
     routes  : [
         {

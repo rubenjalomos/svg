@@ -4,7 +4,10 @@ import {FuseLoadable} from '@fuse';
 
 export const MailAppConfig = {
     settings: {
-        layout: {}
+        layout: {
+            style: 'layout1'
+        },
+        
     },
     routes  : [
         {
