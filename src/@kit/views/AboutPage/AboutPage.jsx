@@ -5,28 +5,16 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
-import MenuItem from '@material-ui/core/MenuItem';
-import TextField from '@material-ui/core/TextField';
 import {Typography} from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 
 // @material-ui/icons
 
 // core components
-import Header from "@kit/components/Header/Header.jsx";
 import Footer from "@kit/components/Footer/Footer.jsx";
-import GridContainer from "@kit/components/Grid/GridContainer.jsx";
-import GridItem from "@kit/components/Grid/GridItem.jsx";
-//import Button from "@kit/components/CustomButtons/Button.jsx";
-import HeaderLinks from "@kit/components/Header/HeaderLinks.jsx";
-import RightHeaderLinks from "@kit/components/Header/RightHeaderLinks.jsx";
-import Parallax from "@kit/components/Parallax/Parallax.jsx";
-
 import AboutPageStyle from "@kit/assets/jss/material-kit-react/views/AboutPage.jsx";
 
 // Sections for this page
@@ -83,14 +71,14 @@ class AboutPage extends React.Component {
                     </Grid>
                 </CardContent>
             </CardActionArea>
-            <CardActions>
+            {/* <CardActions>
                 <Button size="small" color="primary">
                 Share
                 </Button>
                 <Button size="small" color="primary">
                 Learn More
                 </Button>
-            </CardActions>
+            </CardActions> */}
             </Card>
   
         

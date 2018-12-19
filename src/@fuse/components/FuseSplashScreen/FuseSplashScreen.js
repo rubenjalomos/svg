@@ -5,10 +5,10 @@ const FuseSplashScreen = () => {
         <div id="fuse-splash-screen">
 
             <div className="center">
-
-                <div className="logo">
+            <img width="128" src={require("@kit/assets/img/original.jpg")} alt="logo"/>
+                {/* <div className="logo">
                     <img width="128" src="assets/images/logos/fuse.svg" alt="logo"/>
-                </div>
+                </div> */}
                 <div className="spinner-wrapper">
                     <div className="spinner">
                         <div className="inner">

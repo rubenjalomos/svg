@@ -62,7 +62,10 @@ const aboutPageStyle = {
   },
   img:{
     marginTop:'1%',
-    marginLeft:'23%'
+    display: 'flex',
+    width:'52vw',
+    marginLeft: 'auto',
+    marginRight: 'auto'
   }
 };
 

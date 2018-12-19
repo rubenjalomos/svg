@@ -24,6 +24,8 @@ import {FaqPageConfig} from './faq/FaqPageConfig';
 import {KnowledgeBasePageConfig} from './knowledge-base/KnowledgeBaseConfig';
 import {HomeConfig} from './home/HomeConfig';
 import {AboutConfig} from './about/AboutConfig';
+import {OurTeamConfig} from './ourTeam/OurTeamConfig';
+import {ContactConfig} from './contact/ContactConfig';
 import _ from '@lodash';
 import {authRoles} from 'auth';
 
@@ -60,5 +62,7 @@ export const pagesConfigs = [
     ComingSoonPageConfig,        
     Error500PageConfig,
     HomeConfig,
-    AboutConfig
+    AboutConfig,
+    OurTeamConfig,
+    ContactConfig
 ];

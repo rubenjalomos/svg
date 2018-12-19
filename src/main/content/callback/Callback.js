@@ -27,7 +27,8 @@ class Callback extends Component {
     render()
     {
         return (
-            <FuseSplashScreen/>
+            // <FuseSplashScreen/>
+            <div>suppp</div>
         );
     }
 }

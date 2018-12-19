@@ -1,6 +1,6 @@
 import {FuseLoadable} from '@fuse';
 import {authRoles} from 'auth';
-
+import auth0Service from 'auth0Service';
 export const AboutConfig = {
     settings: {
         layout: {
@@ -9,8 +9,9 @@ export const AboutConfig = {
                 navbar        : {
                     display: true
                 },
-                toolbar       : {
-                    display: true
+                toolbar: {
+                    display : false,               
+                    position: 'below'
                 },
                 footer        : {
                     display: false

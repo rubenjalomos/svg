@@ -33,6 +33,7 @@ const jss = create({
 jss.options.insertionPoint = document.getElementById('jss-insertion-point');
 const generateClassName = createGenerateClassName();
 
+
 ReactDOM.render(
     <JssProvider jss={jss} generateClassName={generateClassName}>
         <Provider store={store}>
@@ -41,10 +42,10 @@ ReactDOM.render(
                     <FuseAuthorization routes={routes}>
                         <FuseTheme>
                             <FuseLayout
-                                routes={routes}
+                                routes={routes}                                
                                 toolbar={
-                                    <MainToolbar/>
-                                }
+                                    <MainToolbar />
+                                }                                
                                 navbarHeader={
                                     <MainNavbarHeader/>
                                 }

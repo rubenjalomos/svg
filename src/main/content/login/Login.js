@@ -40,10 +40,9 @@ class Login extends Component {
                 <div
                     className={classNames(classes.intro, "flex flex-col flex-no-grow items-center p-16 text-center md:p-128 md:items-start md:flex-no-shrink md:flex-1 md:text-left")}>
 
-                    <FuseAnimate animation="transition.expandIn">
-                        <img className="w-128 mb-32" src="@kit/assests/img/solar1.jpg" alt="logo"/>
-                    </FuseAnimate>
-
+                    {/* <FuseAnimate animation="transition.expandIn">
+                        <img className="w-128 mb-32" src={require('@kit/assets/img/original.jpg')} alt="logo"/>
+                    </FuseAnimate> */}
                     <FuseAnimate animation="transition.slideUpIn" delay={300}>
                         <Typography variant="h3" color="inherit" className="font-light">
                             SolarVerse Advanced Solutions

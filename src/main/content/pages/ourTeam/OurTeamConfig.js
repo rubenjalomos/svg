@@ -2,7 +2,7 @@ import {FuseLoadable} from '@fuse';
 import {authRoles} from 'auth';
 import auth0Service from 'auth0Service';
 
-export const HomeConfig = {
+export const OurTeamConfig = {
     settings: {
         layout: {
             style: 'layout2',
@@ -28,9 +28,9 @@ export const HomeConfig = {
     },
     routes  : [
         {
-            path     : '/home',
+            path     : '/our-team',
             component: FuseLoadable({
-                loader: () => import('./Home')
+                loader: () => import('./OurTeam')
             })
         }
     ]

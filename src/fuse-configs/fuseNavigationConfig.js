@@ -45,6 +45,14 @@ export const fuseNavigationConfig = [
         'url'  : '/our-charity-events'
     },
     {
+        'id'   : 'Login',
+        'title': 'LOGIN',
+        'type' : 'item',
+        'icon' : '',
+        'url'  : '/login',
+        'auth' : authRoles.onlyGuest
+    },
+    {
         'type': 'divider',
         'id'  : 'divider-0'
     },

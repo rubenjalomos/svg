@@ -19,6 +19,7 @@ function InfoArea({ ...props }) {
     [classes.icon]: true,
     [classes.iconVertical]: vertical
   });
+  let d = description.replace(new RegExp('\n', 'g'), '<br/>');
   return (
     <div className={classes.infoArea}>
       <div className={iconWrapper}>
@@ -26,7 +27,7 @@ function InfoArea({ ...props }) {
       </div>
       <div className={classes.descriptionWrapper}>
         <h4 className={classes.title}>{title}</h4>
-        <p className={classes.description}>{description}</p>
+        <p dangerouslySetInnerHTML={{__html: d}} className={classes.description}></p>
       </div>
     </div>
   );
@@ -38,7 +39,7 @@ InfoArea.defaultProps = {
 
 InfoArea.propTypes = {
   classes: PropTypes.object.isRequired,
-  icon: PropTypes.func.isRequired,
+  icon: PropTypes.func,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   iconColor: PropTypes.oneOf([

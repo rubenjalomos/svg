@@ -38,6 +38,9 @@ const imagesStyles = {
     bottom: "0",
     left: "0",
     padding: "1.25rem"
+  },
+  imgMinWidth:{
+    minWidth: 287
   }
 };
 
